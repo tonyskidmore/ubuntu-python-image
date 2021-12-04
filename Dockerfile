@@ -8,7 +8,8 @@ RUN apt-get -y update && \
     python3-venv \
     python3-pip \
     unzip \
-    wget
+    wget \
+    curl
 
 RUN CHROMEDRIVER_VERSION=`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE` && \
     wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip && \
